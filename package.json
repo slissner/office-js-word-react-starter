@@ -1,0 +1,47 @@
+{
+  "name": "office-js-react-starter",
+  "description": "Starter kit to build office-js Word add-ins with react.js",
+  "keywords": ["office-js", "react", "typescript", "webpack", "browsersync"],
+  "author": {
+    "name": "Samuel Lissner",
+    "email": "samuel.lissner@hotmail.com",
+    "url": "http://www.slissner.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slissner/office-js-word-react-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slissner/office-js-word-react-starter.git/issues"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json -w",
+    "bundle": "webpack --config webpack.config.js",
+    "server": "browser-sync start --config bsconfig.json",
+    "start": "concurrently \"npm run bundle\" \"npm run server\""
+  },
+  "dependencies": {
+    "office-ui-fabric-react": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-scripts-ts": "^1.1.6"
+  },
+  "devDependencies": {
+    "@types/jquery": "^2.0.39",
+    "@types/office-js": "0.0.37",
+    "@types/react": "^15.0.11",
+    "@types/react-dom": "^0.14.23",
+    "browser-sync": "^2.18.5",
+    "clean-webpack-plugin": "^0.1.15",
+    "concurrently": "^3.3.0",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "ts-loader": "^2.0.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  }
+}
